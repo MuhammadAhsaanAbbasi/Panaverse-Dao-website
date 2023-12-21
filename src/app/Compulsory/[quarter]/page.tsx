@@ -12,7 +12,7 @@ async function getPost(quarter: string) {
 }
 
 export async function generateStaticParams() {
-    const ids: string[] = ["1", "2", "3"]
+    const ids: number[] = [1,2,3]
     return ids.map((id) => ({ id: id }))
 }
 

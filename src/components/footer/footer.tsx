@@ -2,6 +2,7 @@ import Wrapper from "@/components/shared/Wrapper/wrapper"
 import { CData } from "@/components/shared/Data/data"
 import { CoursesData } from "@/components/shared/Data/data"
 import LinkComponent from "@/components/shared/LinkComponent/link"
+import Link from "next/link"
 
 const Footer = () => {
     return (
@@ -12,9 +13,9 @@ const Footer = () => {
                         <h2 className="text-2xl font-semibold my-3">Compulsory Quarters</h2>
                         {
                             CData.map((item, i) => (
-                                <div key={i} className="my-3">
-                                    <h3 className='truncate ... text-zinc'>{item.Quarter} : {item.objective}</h3>
-                                </div>
+                                <Link key={i} href={`/Compulsory/${item.id}`} className="my-3 cursor-pointer">
+                                    <h3 className='truncate ... text-zinc hover:text-zinc2 hover:scale-[1.02] transition-all duration-500'>{item.Quarter} : {item.objective}</h3>
+                                </Link>
                             ))
                         }
                     </div>
@@ -22,9 +23,9 @@ const Footer = () => {
                         <h2 className="text-2xl font-semibold">Specialization Tracks</h2>
                         {
                             CoursesData.map((item, i) => (
-                                <div key={i} className="my-3">
-                                    <h3 className='text-zinc'>{item.name}</h3>
-                                </div>
+                                <Link href={`/Courses/${item.id}`} key={i} className="my-3 cursor-pointer">
+                                    <h3 className='text-zinc py-1 hover:text-zinc2 hover:scale-[1.02] transition-all duration-500'>{item.name}</h3>
+                                </Link>
                             ))
                         }
                     </div>

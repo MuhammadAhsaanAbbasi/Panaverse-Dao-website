@@ -1,7 +1,6 @@
 import Wrapper from "@/components/shared/Wrapper/wrapper"
 import Image, { StaticImageData } from "next/image"
 import { FC } from "react"
-import { motion, } from "framer-motion"
 
 const QuarterHero:FC<{ text: string, image:StaticImageData, quarter?: string, objective?: string, duration?:number, Specailization?:boolean }> = ({ text, image, quarter, objective,duration,Specailization=false }) => {
     return (
@@ -9,17 +8,7 @@ const QuarterHero:FC<{ text: string, image:StaticImageData, quarter?: string, ob
             <Wrapper>
                 <div className="flex items-center flex-col md:flex-row py-10">
                     {/* left side */}
-                    <motion.div className='basis-8/12 py-5'
-                    initial={{ opacity: 0, x: -40,}}
-                    whileInView={{
-                        opacity: 1, 
-                        x: 0,
-                    }}
-                    transition={{
-                        duration: 1.5,
-                        ease: "backInOut",
-                    }}
-                    >
+                    <div className='basis-8/12 py-5'>
                         <h1 className="text-4xl font-bold leading-[1.3] max-w-xl bg-clip-text text-transparent bg-gradient-to-r from-ordinary to-extraordinary">{text}</h1>
                         <h1 className='text-black text-4xl font-bold leading-[1.3]'>{
                         Specailization&&"Specailization"}</h1>
@@ -30,21 +19,11 @@ const QuarterHero:FC<{ text: string, image:StaticImageData, quarter?: string, ob
                                 <h3 className="text-white">Duration: ( {duration} Weeks )</h3>
                             </div>
                         </div>
-                    </motion.div>
+                    </div>
                     {/* right side */}
-                    <motion.div className="basis-4/12 py-5"
-                    initial={{ opacity: 0, x: 40}}
-                    whileInView={{
-                        opacity: 1, 
-                        x: 0
-                    }}
-                    transition={{
-                        duration: 1.5,
-                        ease: "backInOut",
-                    }}
-                    >
+                    <div className="basis-4/12 py-5">
                         <Image src={image} alt={"common"} height={400} width={400} className="h-76 w-76"/>
-                    </motion.div>
+                    </div>
                 </div>
             </Wrapper>
         </section>

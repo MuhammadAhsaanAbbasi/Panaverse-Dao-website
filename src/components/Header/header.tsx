@@ -35,7 +35,7 @@ const Navhead = () => {
   <DropdownMenuContent className="bg-white">
     {
     program.map((item,i)=>(
-      <DropdownMenuItem key={i} className='font-bold text-black hover:bg-transparent'>
+      <DropdownMenuItem key={i} className='font-bold text-black bg-transparent hover:bg-slate-200 transition-all'>
         <Link href={`/Courses/${item.id}`}>{item.name}</Link>
       </DropdownMenuItem>
       ))
