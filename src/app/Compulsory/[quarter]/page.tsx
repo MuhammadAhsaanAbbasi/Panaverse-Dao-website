@@ -70,20 +70,20 @@ export default async function Post({ params }: { params: { quarter: string } }) 
                                                                                                         <div key={nested_list_index} className="block my-3">
                                                                                                             {
                                                                                                                 nested_list.type === 'text' ?
-                                                                                                                    <div key={nested_list_index} className="flex items-center mx-6">
-                                                                                                                        <span className='mr-2 mt-1'><MdVerified /></span>
-                                                                                                                        <p className="text-lg font-medium">
-                                                                                                                            {nested_list.text}
-                                                                                                                        </p>
-                                                                                                                    </div>
+                                                                                                                <div key={nested_list_index} className="flex items-center mx-6">
+                                                                                                                    <span className='mr-2 mt-1'><MdVerified /></span>
+                                                                                                                    <p className="text-lg font-medium">
+                                                                                                                        {nested_list.text}
+                                                                                                                    </p>
+                                                                                                                </div>
+                                                                                                                :
+                                                                                                                nested_list.type === 'link' ?
+                                                                                                                    <Link key={nested_list_index} href={nested_list.url} className="flex text-primary items-center gap-x-2 mx-6">
+                                                                                                                        <span><HiOutlineExternalLink /></span>
+                                                                                                                        <span>{nested_list.text}</span>
+                                                                                                                    </Link>
                                                                                                                     :
-                                                                                                                    nested_list.type === 'link' ?
-                                                                                                                        <Link href={nested_list.url} className="flex text-primary items-center gap-x-2">
-                                                                                                                            <span><HiOutlineExternalLink /></span>
-                                                                                                                            <span>{nested_list.text}</span>
-                                                                                                                        </Link>
-                                                                                                                        :
-                                                                                                                        false
+                                                                                                                    false
                                                                                                             }
                                                                                                         </div>
                                                                                                     ))
