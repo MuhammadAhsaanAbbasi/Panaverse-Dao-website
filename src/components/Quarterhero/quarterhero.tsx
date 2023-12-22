@@ -6,7 +6,7 @@ const QuarterHero:FC<{ text: string, image:StaticImageData, quarter?: string, ob
     return (
         <section className="bg-zinc2">
             <Wrapper>
-                <div className="flex items-center flex-col md:flex-row py-10">
+                <div className="flex items-center flex-col-reverse md:flex-row py-10">
                     {/* left side */}
                     <div className='basis-8/12 py-5'>
                         <h1 className="text-4xl font-bold leading-[1.3] max-w-xl bg-clip-text text-transparent bg-gradient-to-r from-ordinary to-extraordinary">{text}</h1>
