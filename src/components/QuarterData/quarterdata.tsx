@@ -27,7 +27,7 @@ const TrackData: FC<{ Data: any }> = ({ Data }) => {
                     {Data?.Quarter_Data.map((item: any, i: any) => (
                         <>
                             <div key={i}></div>
-                            <div key={i} onClick={() => setSelectedItem(item.id)} className={`p-3 my-3 bg-slate-400 rounded-md rotate-45 cursor-pointer border-2 border-white ${selectedItem === item.id ? 'bg-sky-500 transition-all duration-500' : 'bg-slate-400'
+                            <div key={i} onClick={() => setSelectedItem(item.id)} className={`p-3 my-3 bg-slate-400 rounded-md rotate-45 cursor-pointer border-2 border-white hover:bg-slate-500 transition-all duration-500 ${selectedItem === item.id ? 'bg-sky-500' : 'bg-slate-400'
                                 }`}>
                                 <h3 className="-rotate-45 text-xl text-white">Q {item.id}</h3>
                             </div>
