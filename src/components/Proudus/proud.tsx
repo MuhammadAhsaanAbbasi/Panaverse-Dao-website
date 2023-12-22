@@ -27,7 +27,7 @@ const Proud = () => {
                     <div className="grid grid-cols-12 gap-8 mt-4">
                         {
                             Data.map((item, i) => (
-                                <motion.div key={i} className={`col-span-12 sm:col-span-6 lg:col-span-3 flex flex-col justify-center text-white items-center p-10 rounded-xl ${item.color}`}
+                                <motion.div key={i} className={`col-span-12 sm:col-span-6 lg:col-span-3 flex flex-col justify-center text-white items-center p-5 md:p-10 rounded-xl ${item.color}`}
                                     initial={{ opacity: 0, y: 100, }}
                                     whileInView={{
                                         opacity: 1,
