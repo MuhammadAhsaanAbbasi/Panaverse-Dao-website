@@ -47,7 +47,7 @@ const Nutshell = () => {
                         >{"In this brand-new type of curriculum, students will learn how to make money and boost exports in the classroom and will begin doing so within six months of the program's beginning. It resembles a cross between a corporate venture and an educational project"}</motion.p>
                     </div>
                     {/* lower content */}
-                    <div className="flex items-center flex-col md:flex-row my-5">
+                    <div className="flex items-center flex-col md:flex-row my-5 gap-y-3">
                         {/* left side */}
                         <div className="basis-7/12 pr-14">
                             <motion.h2 className='text-3xl font-bold'

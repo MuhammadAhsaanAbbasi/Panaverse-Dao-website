@@ -25,7 +25,7 @@ const SpecializedTrack = () => {
                             duration: 1.5,
                             ease: "easeInOut",
                         }}
-                        className="text-4xl font-bold"><span className="bg-clip-text text-transparent bg-gradient-to-r from-ordinary via-extraordinary to-secondary">Sepecialized</span> Tracks:</motion.h2>
+                        className="text-2xl md:text-4xl font-bold"><span className="bg-clip-text text-transparent bg-gradient-to-r from-ordinary via-extraordinary to-secondary">Sepecialized</span> Tracks:</motion.h2>
                         <motion.p 
                         initial={{ opacity: 0, x: -40, y: 50 }}
                         whileInView={{
@@ -83,7 +83,7 @@ const SpecializedTrack = () => {
                                 duration: 1.5,
                                 ease: "backInOut",
                             }}
-                            className="text-lg text-zinc mt-2">{selectedItemData?.description}</motion.p>
+                            className="md:text-lg text-zinc mt-2">{selectedItemData?.description}</motion.p>
                             <Button text="Learn More" color="bg-primary" rounded="rounded-lg" hover="hover:bg-[rgb(39,94,217)]"/>
                             <motion.div 
                             initial={{ opacity: 0, x: -40, scale:0.75}}
@@ -126,12 +126,12 @@ const SpecializedTrack = () => {
                                             ease: "backInOut",
                                         }}
                                         onClick={()=> setSelectedItem(item.id)} className="flex gap-x-4 cursor-pointer items-center my-7">
-                                            <div key={i} className="flex-shrink-0 h-24 w-40">
+                                            <div key={i} className="flex-shrink-0 h-20 w-28 md:h-24 md:w-40">
                                                 <Image src={item.image}  alt="metaverse" height={150} width={150} className="h-full w-full object-cover rounded-md" />
                                             </div>
-                                            <div className="basis-8/12">
+                                            <div className="basis-9/12">
                                                 <h4 className="text-zinc font-medium">Specialized Track</h4>
-                                                <h3 className="font-semibold text-lg">{item.name} Specialization</h3>
+                                                <h3 className="font-semibold md:text-lg">{item.name} Specialization</h3>
                                             </div>
                                         </motion.div>
                                         <div className="w-full h-[0.05rem] bg-slate-400"></div>

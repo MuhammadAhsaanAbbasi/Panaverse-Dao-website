@@ -10,7 +10,7 @@ const Hero = () => {
     return (
         <section>
             <Wrapper>
-                <div className="flex items-center flex-col md:flex-row">
+                <div className="flex items-center flex-col md:flex-row gap-y-2">
                     {/* left side */}
                     <motion.div className="basis-7/12"
                         initial={{ opacity: 0, x: -40,}}
@@ -23,7 +23,7 @@ const Hero = () => {
                             ease: "backInOut",
                         }}
                     >
-                        <h1 className="text-5xl font-bold leading-[1.3] max-w-sm bg-clip-text text-transparent bg-gradient-to-r  from-ordinary to-extraordinary">{title}</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold leading-[1.3] max-w-sm bg-clip-text text-transparent bg-gradient-to-r  from-ordinary to-extraordinary">{title}</h1>
                         <h4 className="text-zinc text-lg mt-2">Presidential Initiative for Artificial Intelligence and Computing (PIAIC)</h4>
                         <div className="w-20 h-1 sm:h-2 bg-gradient-to-r from-[rgb(13,187,161)] to-[rgb(10,209,146)]"></div>
                         <p className="mt-6 text-lg font-normal">First two quarters are compulsary for everyone and remaining two are the specialization in different domains</p>

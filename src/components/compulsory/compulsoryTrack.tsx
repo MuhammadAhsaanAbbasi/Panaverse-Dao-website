@@ -18,7 +18,7 @@ const CompulsoryTrack = () => {
                             duration: 1.5,
                             ease: "backInOut",
                         }}
-                        className="text-4xl my-4 font-bold"><span className="bg-clip-text text-transparent bg-gradient-to-r from-ordinary via-extraordinary to-secondary">Compulsory</span> Courses</motion.h2>
+                        className="text-2xl md:text-4xl my-4 font-bold"><span className="bg-clip-text text-transparent bg-gradient-to-r from-ordinary via-extraordinary to-secondary">Compulsory</span> Courses</motion.h2>
                     <motion.h4
                         initial={{ opacity: 0, x: -40, y: 50 }}
                         whileInView={{
@@ -29,7 +29,7 @@ const CompulsoryTrack = () => {
                             duration: 1.5,
                             ease: "backInOut",
                         }}
-                        className="text-2xl font-bold">Core Courses (Common in All Specializations)</motion.h4>
+                        className="text-xl md:text-2xl font-semibold md:font-semibold">Core Courses (Common in All Specializations)</motion.h4>
                     <motion.p
                         initial={{ opacity: 0, x: -40, y: 50 }}
                         whileInView={{
@@ -52,17 +52,17 @@ const CompulsoryTrack = () => {
                     duration: 1.5,
                     ease: "backInOut",
                 }}
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full m-auto gap-10 pb-14 pt-14">
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-10 pb-14 pt-14">
                     {CData.map((item, i) => (
-                        <Link href={`/Compulsory/${item.id}`} key={i} className="flex items-center relative gap-5 p-5 bg-[#6f6f6f16] border-gray-400 hover:scale-110 overflow-hidden rounded-3xl hover:bg-[rgba(167,31,49,0.25)] backdrop-blur">
+                        <Link href={`/Compulsory/${item.id}`} key={i} className="flex items-center relative gap-5 p-5 bg-[#6f6f6f16] border-gray-400 hover:scale-90 md:hover:scale-110 overflow-hidden rounded-3xl hover:bg-[rgba(167,31,49,0.25)] backdrop-blur">
                                 <div className={`absolute right-0 w-52 h-52 rotate-45 rounded-lg ${item.color} blur-3xl`}>
                                 </div>
-                                <div className='basis-4/12'>
-                                    <div className="z-10 text-[10rem] text-[#00000017] font-[900] leading-none xl:text-[7rem]">
+                                <div className='basis-3/12 md:basis-4/12'>
+                                    <div className="z-10 text-[7rem] text-[#00000017] font-[900] leading-none xl:text-[10rem]">
                                         {i + 1}
                                     </div>
                                 </div>
-                                <div className='basis-8/12'>
+                                <div className='basis-9/12 md:basis-8/12'>
                                     <h4 className="font-bold text-lg my-3">{item.Quarter}</h4>
                                     <p className="mt-2 text-zinc my-3">{item.objective}</p>
                                 </div>

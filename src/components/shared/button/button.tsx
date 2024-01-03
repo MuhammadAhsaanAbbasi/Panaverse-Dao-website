@@ -19,7 +19,7 @@ const Button: FC<{ text: string, color: string, rounded?: string, hover: string 
         }}
         >
             <Link href={"https://www.piaic.org/"} target='_blank' rel='noreferrer'>
-                <button className={`mt-7 px-7 py-4 text-white ${color} flex items-center gap-x-2 ${rounded} font-semibold text-base font-["poppins"] hover:scale-105 transition-all duration-500 ease-in-out ${hover}`}>{text}<span className='w-5'>
+                <button className={`mt-7 px-5 py-3 text-white ${color} flex items-center gap-x-2 ${rounded} font-semibold text-base font-["poppins"] hover:scale-105 transition-all duration-500 ease-in-out ${hover}`}>{text}<span className='w-5'>
                     <BiLinkExternal className='text-white' size={18} />
                 </span></button>
             </Link>

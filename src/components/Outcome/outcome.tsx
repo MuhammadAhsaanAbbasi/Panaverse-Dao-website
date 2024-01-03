@@ -9,7 +9,7 @@ const OutCome = () => {
     return (
         <section className="mt-16 md:mt-28">
             <Wrapper>
-                <div className="flex gap-x-8 flex-col-reverse md:flex-row items-center">
+                <div className="flex gap-x-8 flex-col-reverse md:flex-row items-center gap-y-3">
                     <motion.div 
                     initial={{ opacity: 0, x: -40, scale:0.60 }}
                     whileInView={{
@@ -34,7 +34,7 @@ const OutCome = () => {
                             duration: 1.5,
                             ease: "easeInOut",
                         }}
-                        className="bg-clip-text text-transparent bg-gradient-to-r from-ordinary via-extraordinary to-secondary text-4xl font-bold">The Outcome for Participants of the Program</motion.h2>
+                        className="bg-clip-text text-transparent bg-gradient-to-r from-ordinary via-extraordinary to-secondary text-3xl md:text-4xl font-bold">The Outcome for Participants of the Program</motion.h2>
                         <motion.p 
                         initial={{ opacity: 0, x:-50, scale:0.70}}
                         whileInView={{

@@ -21,7 +21,7 @@ const Navhead = () => {
         </header>
     <nav className="bg-[#ffffff9d] backdrop-blur-xl sticky top-0 z-10">
     <Wrapper>
-        <div className="flex justify-between py-4 px-3 items-center">
+        <div className="flex justify-between py-4 px-3 items-center gap-x-4 md:gap-x-0">
     <div>
       <Link href={"/"}>
         <Image src={logo} alt="" height={110} width={110}/>
@@ -32,7 +32,7 @@ const Navhead = () => {
         <Link href={"/"}><li>Home</li></Link>
         <li><DropdownMenu>
   <DropdownMenuTrigger className="flex items-center">Courses<ChevronDown/></DropdownMenuTrigger>
-  <DropdownMenuContent className="bg-white">
+  <DropdownMenuContent className="bg-white mx-20">
     {
     program.map((item,i)=>(
       <DropdownMenuItem key={i} className='font-bold text-black bg-transparent hover:bg-slate-200 transition-all'>

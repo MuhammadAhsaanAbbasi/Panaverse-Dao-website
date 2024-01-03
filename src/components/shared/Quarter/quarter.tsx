@@ -14,7 +14,7 @@ const QuarterBox:FC<Iprops> = ({header,description,number,color,haveBorder=true}
         <div className={`absolute right-0 w-52 h-52 rotate-45 ${color} rounded-lg blur-3xl`}>
         </div>
             <div className='basis-3/12'>
-                <div className="z-10 text-[10rem] text-[#00000017] font-[900] leading-none xl:text-[7rem]">
+                <div className="z-10 text-[7rem] text-[#00000017] font-[900] leading-none lg:text-[10rem]">
                 {number}
                 </div>
             </div>
